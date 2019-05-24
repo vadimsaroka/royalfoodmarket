@@ -1,0 +1,146 @@
+.contact {
+  padding: 12rem 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5rem;
+
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: #2e2e2e;
+
+    //900px
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__map {
+    height: 65rem;
+    width: 58%;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
+
+    //1200px
+    @media only screen and (max-width: $bp-largest) {
+      width: 73%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 83%;
+    }
+
+    //450px
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #005b55;
+    border-radius: 0.4rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.55);
+
+    //450px
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  &__heading {
+    order: 1;
+    flex: 100%;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    flex: 100%;
+    order: 2;
+    position: relative;
+  }
+
+  label {
+    margin-top: 3rem;
+    color: #fff;
+  }
+
+  &__input {
+    font-size: inherit;
+    background-color: rgba(#fff, 0.8);
+    border-radius: 0.4rem;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-bottom: 0.3rem solid transparent;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    color: inherit;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__span {
+    color: red;
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    resize: none;
+    height: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    align-self: flex-start;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.95);
+      transform: translateY(-0.2rem);
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-0.1rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 5rem 0;
+
+    a {
+      // text-decoration: none;
+      color: inherit;
+    }
+  }
+}

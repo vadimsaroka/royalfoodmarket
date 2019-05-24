@@ -1,0 +1,56 @@
+.reviews {
+  background-color: #2e2e2e;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //450px
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 4rem 1rem;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    //900px
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin: 2.5rem;
+    width: 50%;
+    max-width: 100rem;
+    transition: all 0.3s;
+
+    //1200px
+    @media only screen and (max-width: $bp-largest) {
+      width: 70%;
+    }
+
+    //900px
+    @media only screen and (max-width: $bp-medium) {
+      width: 85%;
+    }
+
+    //450px
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.yelp-review {
+  max-width: 100% !important;
+  min-width: 10rem !important;
+}
