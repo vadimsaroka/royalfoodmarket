@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "postcss-cli": "^6.1.2"
   },
   "devDependencies": {
