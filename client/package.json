@@ -35,7 +35,7 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1",
-    "tar": ">=4.4.2"
+    "tar": ">=5.0.10"
   },
   "proxy": "http://localhost:5000/"
 }
